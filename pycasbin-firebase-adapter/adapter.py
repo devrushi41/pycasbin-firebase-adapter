@@ -41,22 +41,6 @@ class CasbinRule(object):
         return '{} {} {} {} {} {} {}'.format(self.ptype, self.v0, self.v1, self.v2, self.v3, self.v4, self.v5)
 
 
-def addToFirestore(self, db):
-    '''
-    Add CasbinRule to Firestore
-    '''
-    doc_ref = db.collection(self._collection).document()
-    doc_ref.set({
-        'ptype': self.ptype,
-        'v0': self.v0,
-        'v1': self.v1,
-        'v2': self.v2,
-        'v3': self.v3,
-        'v4': self.v4,
-        'v5': self.v5
-    })
-
-
 class Adapter(persist.Adapter):
     """the interface for Casbin adapters."""
 
