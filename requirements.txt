@@ -1,0 +1,2 @@
+casbin>=0.8.1
+firebase_admin>=5.0.0
